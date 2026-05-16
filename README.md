@@ -12,6 +12,8 @@ The study analyzes a panel dataset of 16 Latin American countries from 1992 to 2
 ## Repository Structure
 
 ```text
+README.md
+
 data/
   Thesis_Tidy_Data.xlsx
 
@@ -19,13 +21,6 @@ scripts/
   01_prepare_data_impute_missing_values.R
   02_descriptive_statistics.R
   03_transform_select_fit_models.R
-
-outputs/
-  tables/
-  figures/
-
-docs/
-  variable_notes.md
 ```
 
 ## How to Run the Code
