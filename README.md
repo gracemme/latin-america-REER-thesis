@@ -26,3 +26,37 @@ outputs/
 
 docs/
   variable_notes.md
+```
+
+## How to Run the Code
+
+Run the scripts in the following order:
+
+1. ```scripts/01_prepare_data_impute_missing_values.R```
+2. ```scripts/02_descriptive_statistics.R```
+3. ```scripts/03_transform_select_fit_models.R```
+
+The third script estimates the final model specifications and compares the pooled OLS, country fixed effects, time fixed effects, and two-way fixed effects models.
+
+## Required R Packages
+
+```text
+install.packages(c(
+  "readxl",
+  "dplyr",
+  "tidyr",
+  "VIM",
+  "patchwork",
+  "ggplot2",
+  "glmnet",
+  "fixest"
+))
+```
+
+## Data
+
+The dataset is a cleaned panel dataset constructed from REER and World Bank indicators. The final analysis excludes 2024 due to missingness across several variables.
+
+## Author
+
+Grace McCullough
